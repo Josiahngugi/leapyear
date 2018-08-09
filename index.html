@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>leap year</title>
+  </head>
+  <body>
+  <div class="lorna">
+    <h1>Check for a leap using our website</h1>
+    <form class="" action="index.html" method="post" id="myform">
+      <input type="text" name="number" id="value" placeholder="put year">
+      <button onclick="leapyr()">submit</button>
+    </form>
+  </div>
+  <p id="demo"></p>
+  <script type="text/javascript">
+    function leapyr() {
+      var year=document.getElementById('myform').elements.namedItem("number").value;
+      if (year%4===0&&year%100!==0||year%400===0){
+      alert("leap year")
+      }
+      else {
+        alert("This is not a leap year")
+      }
+    }
+  </script>
+  </body>
+</html>
